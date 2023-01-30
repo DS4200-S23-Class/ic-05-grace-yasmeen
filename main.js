@@ -4,14 +4,20 @@
 var count = 0; 
 
 //button function
-function buttonClicked(){
+function buttonClicked()
+{
 	console.log("button was clicked");
 
-	let newText = "number of times button clicked:" , count++;
+	count +=1; 
+
+	let newText = "Button was clicked";
+	console.log(count);
 
 	//select the element we want to modify
 	let buttonDiv = document.getElementById("button-div");
 
-	buttonDiv.innerHTML = newText;
+	
+	buttonDiv.innerHTML = count;
+
 }
 
