@@ -1,10 +1,13 @@
 // javascript file for ic-05
 
+// initiallize count
+var count = 0; 
+
 //button function
 function buttonClicked(){
 	console.log("button was clicked");
 
-	let newText = "Button was clicked";
+	let newText = "number of times button clicked:" , count++;
 
 	//select the element we want to modify
 	let buttonDiv = document.getElementById("button-div");
